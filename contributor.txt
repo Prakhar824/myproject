@@ -1,0 +1,33 @@
+Hello everyone My name is Prakhar. I have designed a project on stack 
+implementation in c. Using git I have merged and committed the changes 
+to the program. My contributors in this project are:
+-------------
+1. Nishkarsh
+-------------
+2. Prajjwal
+-------------
+3. Nirmaljeet
+-------------
+Please both of them are requested to see what they had to commit. 
+Basically my project is on the implementation of stack using c. 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SO PLEASE REVIEW YOUR COMMITS:
+
+1. Prajjwal
+Make a function named as pop to delete the stack elemenrts. Make a 
+seperate branch named as pop.
+
+2.Nishkarsh
+Make a function of push to enter the elements in stack .Make a seperate 
+branch named as push.
+
+3.Nirmaljeet
+Make a function named as isempty to check whether the stack is empty or 
+not. Make a seperate branch named as isempty. 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
+After you had committed I will merge those branches with my master branch and at last my project will be completed. So please do the above commits suggested.
+---------------------------------------------------------------------------
+Thank you
+---------------------------------------------------------------------------
