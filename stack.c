@@ -1,37 +1,42 @@
 #include <stdio.h>
 
-int MAXSIZE = 7;       
-int stack[8];     
-int top = -1;            
-
-int isempty() 
+int MAXSIZE = 7;
+int stack[8];
+int top = -1;
+int isempty()
 {
 //nirmal will add here
-               
 }
-   
 int isfull()
- {
-   if(top = = MAXSIZE)
-      return 1;
-   else
-      return 0;
-
- }
-
-int peek() {
+{
+if(top = = MAXSIZE)
+return 1;
+else
+return 0;
+}
+int peek()
+{
 return stack[top];
 }
-
-int pop() 
+int pop()
 {
- //prajjwal will add here
+//Commits done by Prajjawal//
+int data;
+if(!isempty())
+{
+data = stack[top];
+top = top - 1;
+return data;
+}
+else
+{
+printf("Could not retrieve data, Stack is empty.\n");
+}
 }
 
 int push(int data)
- {
-
-  //nishkarsh will add here
+{
+//nishkarsh will add here
 }
 
 int main() {
