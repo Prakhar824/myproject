@@ -1,0 +1,176 @@
+Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop
+$ git clone "https://github.com/Prakhar824/myproject.git"
+Cloning into 'myproject'...
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+
+Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop
+$ cd myproject
+
+Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop/myproject (master)
+$ git branch pop
+
+Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop/myproject (master)
+$ git checkout pop
+Switched to branch 'pop'
+
+Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop/myproject (pop)
+$ ls
+contributor.txt  stack.c
+
+Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop/myproject (pop)
+$ nano stack.c
+
+Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop/myproject (pop)
+$ git status
+On branch pop
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   stack.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop/myproject (pop)
+$ git add .
+
+Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop/myproject (pop)
+$ git commit -m "Added a funtion of pop in your code"
+[pop 35c1c96] Added a funtion of pop in your code
+ 1 file changed, 27 insertions(+), 22 deletions(-)
+
+Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop/myproject (pop)
+$ git push -u origin pop
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 585 bytes | 195.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Prakhar824/myproject.git
+   313d87e..35c1c96  pop -> pop
+Branch 'pop' set up to track remote branch 'pop' from 'origin'.
+
+Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop/myproject (pop)
+$ git log -v -a -p
+commit 35c1c96951ed17062c4c6d0ed1f1f75fc9bca20f (HEAD -> pop, origin/pop)
+Author: Prajjawal Banati <500060722@stu.upes.ac.in>
+Date:   Sun Apr 15 23:12:40 2018 +0530
+
+    Added a funtion of pop in your code
+
+diff --git a/stack.c b/stack.c
+index 8481818..90c3ebc 100644
+--- a/stack.c
++++ b/stack.c
+@@ -1,37 +1,42 @@
+ #include <stdio.h>
+
+-int MAXSIZE = 7;
+-int stack[8];
+-int top = -1;
+-
+-int isempty()
++int MAXSIZE = 7;
++int stack[8];
++int top = -1;
++int isempty()
++int top = -1;
++int isempty()
+ {
+ //nirmal will add here
++int stack[8];
+commit 35c1c96951ed17062c4c6d0ed1f1f75fc9bca20f (HEAD -> pop, origin/pop)
+Author: Prajjawal Banati <500060722@stu.upes.ac.in>
+Date:   Sun Apr 15 23:12:40 2018 +0530
+
+    Added a funtion of pop in your code
+
+diff --git a/stack.c b/stack.c
+index 8481818..90c3ebc 100644
+--- a/stack.c
++++ b/stack.c
+@@ -1,37 +1,42 @@
+ #include <stdio.h>
+
+-int MAXSIZE = 7;
+-int stack[8];
+-int top = -1;
+-
+-int isempty()
++int MAXSIZE = 7;
++int stack[8];
++int top = -1;
++int isempty()
+ {
+ //nirmal will add here
+-
+ }
+-
+ int isfull()
+- {
+-   if(top = = MAXSIZE)
+-      return 1;
+-   else
+-      return 0;
+-
+- }
+-
+-int peek() {
++{
++if(top = = MAXSIZE)
++return 1;
++else
++return 0;
++}
++int peek()
++{
+
+Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop/myproject (pop)
+$ git status
+On branch pop
+Your branch is up to date with 'origin/pop'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Screenshot (1).png
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop/myproject (pop)
+$ git status
+On branch pop
+Your branch is up to date with 'origin/pop'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Commit_1(Prajjawal).png
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop/myproject (pop)
+$ git add .
+
+Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop/myproject (pop)
+$ git commit -m "Added a funtion of pop in your code"
+[pop d2294df] Added a funtion of pop in your code
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Commit_1(Prajjawal).png
+
+Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop/myproject (pop)
+$ git push -u origin pop
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 14.68 KiB | 3.67 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Prakhar824/myproject.git
+   35c1c96..d2294df  pop -> pop
+Branch 'pop' set up to track remote branch 'pop' from 'origin'.
+
+Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop/myproject (pop)
