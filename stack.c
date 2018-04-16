@@ -9,7 +9,7 @@ int isempty()
 }
 int isfull()
 {
-if(top = = MAXSIZE)
+if(top == MAXSIZE)
 return 1;
 else
 return 0;
@@ -36,7 +36,20 @@ printf("Could not retrieve data, Stack is empty.\n");
 
 int push(int data)
 {
-//nishkarsh will add here
+	////Commits done by Nishkarsh Raj Khare
+if(isfull())
+{
+	printf("The Stack is full! Cannot Enter data any further\n Please Delete first before further Insertion\n");
+}
+else if(isempty())
+{
+	printf("Entering First Element");
+	stack[++top]=data;
+}
+else
+{
+	stack[++top]=data;
+}
 }
 
 int main() {
