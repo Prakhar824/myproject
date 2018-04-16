@@ -5,7 +5,14 @@ int stack[8];
 int top = -1;
 int isempty()
 {
-//nirmal will add here
+//added by nirmal
+  if(top = = -1)
+
+      return 1;
+
+   else
+
+      return 0;
 }
 int isfull()
 {
