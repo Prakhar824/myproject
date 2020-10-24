@@ -35,7 +35,8 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 
 Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop/myproject (pop)
-$ git add .
+$ git add . testing
+
 
 Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop/myproject (pop)
 $ git commit -m "Added a funtion of pop in your code"
