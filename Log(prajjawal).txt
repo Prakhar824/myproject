@@ -5,10 +5,8 @@ remote: Counting objects: 4, done.
 remote: Compressing objects: 100% (4/4), done.
 remote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0
 Unpacking objects: 100% (4/4), done.
-
 Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop
 $ cd myproject
-
 Prajjawal Banati@DESKTOP-93D799U MINGW64 ~/Desktop/myproject (master)
 $ git branch pop
 
